@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>التقوي جروب</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./fonts/DTHULUTH-II.ttf">
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="cover">
+      <div class="loading"></div>
+  </div>
+    <!--  start header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">التقوي</div>
+        <ul class="links">
+          <li data-filter="section" class="active">الصفحة الرئيسية</li>
+          <li data-filter="hadith">احاديث</li>
+          <li data-filter="zekr">الاذكار</li>
+          <li data-filter="lecture">المحاضرات</li>
+          <li data-filter="Quran">القران الكريم</li>
+          <li data-filter="prayer-time">اوقات الصلاة</li>
+          <li data-filter="footer">تواصل معنا</li>
+        </ul>
+        <i class="fa-solid fa-bars" id="bar"></i>
+      </div>
+    </div>
+    <!--  End header -->
+    <!-- start section landind -->
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <h2 id="text">
+           <p>لا اله الاالله محمد رسولا اللَّه</p>
+           
+          
+           
+           <!-- لا اله الا الله محمدْ رسول اللَّه -->
+          </h2>
+          <button class="btn">
+            تصفح الان
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End section landind -->
+    <!-- start section hadith  -->
+    <section class="hadith">
+      <div class="title"><h3>احاديث</h3></div>
+      <div class="container">
+        <div class="hadith-container"></div>
+        <div class="buttons">
+          <div class="prev">السابق</div>
+          <div class="number"></div>
+          <div class="next">التالي</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End section hadith -->
+    <!-- start section Zekr -->
+    <section class="zekr">
+      <div class="title"><h3> الاذكار</h3></div>
+      <h3 class="p-zekr">ألا بذكر اللَّه تطمئن القلوب</h3>
+      <div class="container">
+        <div class="zekr-container">
+          <!-- Azkar Alsabah -->
+         <div data-filter="أذكار الصباح" class="zekr-Sabah  box">
+          <h2 class="z-title">اذكار الصباح</h2>
+          <img src="imgs/imgsabah-2.jpg" alt="">
+          <p class="text">وردتْ الكثيرَ منْ الأذكارِ المتعلقةِ بالصباحِ في السنةِ النبويةِ الشريفةِ ، وفيما يأتي ذكرها</p>
+        
+         </div>
+         <!-- Azkar Almasah -->
+         <div  data-filter="أذكار المساء" class="zekr-Massa box ">
+          <h2 class="z-title">اذكار المساء</h2>
+          <img src="imgs/imgmsah.jpg" alt="">
+          <p class="text">أذكارُ المساءِ ، هيَ مجموعةٌ منْ الأذكارِ وردتْ عنْ النبي محمدْ صلى اللهُ عليهِ وسلمَ والسنةَ أنْ تذكرَ أذكارُ المساءِ قبلَ غروبِ الشمسِ</p>
+        
+         </div>
+         <!-- Azkar after Prayer -->
+         <div data-filter="أذكار بعد الصلاة" class="zekr-afterPrayer box">
+          <h2 class="z-title">الأذكار بعدَ الصلاة</h2>
+          <img src="imgs/imgprary.jpg" alt="">
+          <p class="text">فإنَ الأذكارَ الواردةَ عنْ النبيِ صلى اللهُ عليهِ وسلمَ بعدَ الصلاةِ كثيرةً منها</p>
+         
+         </div>
+         <!-- Azkar after sleep -->
+         <div data-filter="أذكار النوم" class="zekr-slep box">
+          <h2 data-filter="أذكارُ النومِ" class="z-title">أذكارُ النومِ</h2>
+          <img src="imgs/img2.jpeg" alt="">
+          <p class="text"> أذكارُ النومِ منْ الأشياءِ التي يبحثُ عنها الكثيرَ منْ المسلمينَ بهدفَ الحصولِ على السكينةِ ونومٍ هادئٍ</p>
+         
+         </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- End section zekr -->
+    <!-- sabah -->
+    <div class="poup">
+      <div class="close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    <div class="sabah-pop"></div>
+  </div>
+  <!-- msa -->
+     <div class="msapoup">
+      <div class="close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    <div class="msa-pop"></div>
+  </div>
+      <!-- afterPrayer -->
+    <div class="parerpoup">
+      <div class="close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    <div class="parer-pop"></div>
+  </div>
+      <!-- sleeping -->
+    <div class="sleeppoup">
+      <div class="close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    <div class="sleep-pop"></div>
+  </div> 
+    <!-- start section lectures -->
+    <section class="lecture">
+      <div class="title"><h3>محاضرات</h3></div>
+      <div class="container">
+        <div class="lec-container">
+        <div class="main-video">
+          <div class="video">
+            <video src="./Lectures/29.mp4 " controls autoplay muted></video>
+            <h3 class="titel">احذر ان تكون من الأشقياء المحرومين</h3>
+          </div>
+        </div>
+        <div class="video-list">
+
+         
+      </div>
+      </div>
+      </div>
+    </section>
+    <!-- End section lectures -->
+
+    <!-- start Quran-->
+    <section class="Quran">
+      <div class="title"><h3>القران الكريم</h3></div>
+      <div class="container">
+        <div class="Quran-container"></div>
+      </div>
+    </section>
+    <!-- start popup -->
+    <div class="surah-popup">
+      <div class="close">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+      <div class="ayah"></div>
+    </div>
+    <!-- End popup -->
+    <!-- End Quran-->
+
+    <!-- start Prayer Times -->
+    <section class="prayer-time">
+      <div class="title"><h3>اوقات الصلاة</h3></div>
+      <div class="container">
+        <div class="cards"></div>
+        <table class="table">
+          <thead>
+            <th>
+              <td>وقت الاذان</td>
+              <td> الاذان</td>
+            </th>
+          </thead>
+          <tbody .body-table>
+
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+    <!-- End Prayer Times -->
+
+
+    
+
+    <!-- End footer -->
+    <section class="footer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#012c01" fill-opacity="1" d="M0,288L48,277.3C96,267,192,245,288,245.3C384,245,480,267,576,261.3C672,256,768,224,864,197.3C960,171,1056,149,1152,138.7C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    
+      <div class="cont">
+        <div class="links">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/messages/t"><i class="fa-brands fa-facebook-messenger"></i></a>
+          <a href="https://www.instagram.com/kjhgvhj93/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp" title="01127650302" ></i></a>
+         </div>
+         <div class="copy-write">
+          © 2023 Created by: <span>Mohamed Reda </span>
+      
+      </div>
+       </div>
+    </section>
+    <!-- End footer -->
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
